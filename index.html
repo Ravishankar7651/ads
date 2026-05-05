@@ -10,7 +10,8 @@ body{background:#f9f6f1;font-family:Georgia,serif;color:#1a1208;}
 header{background:#1a1208;color:#f9f6f1;text-align:center;padding:14px 10px 10px;}
 header h1{font-size:32px;letter-spacing:2px;}
 header p{font-size:11px;color:#aaa;letter-spacing:3px;text-transform:uppercase;margin-top:2px;}
-.ad-box{background:#f0ece3;border:1px solid #ddd;text-align:center;padding:10px;margin:10px auto;max-width:760px;font-size:9px;color:#999;letter-spacing:2px;text-transform:uppercase;}
+.ad-box{background:#f0ece3;border:1px solid #ddd;text-align:center;padding:10px;margin:10px auto;max-width:760px;}
+.ad-label{font-size:9px;color:#999;letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:6px;}
 .posts{max-width:680px;margin:18px auto;padding:0 14px;}
 .post{border-bottom:1px solid #e0dbd0;padding:12px 0;}
 .post span{font-size:10px;color:#c0392b;letter-spacing:2px;text-transform:uppercase;}
@@ -26,18 +27,12 @@ footer{background:#1a1208;color:#666;text-align:center;padding:12px;font-size:10
   <p>Quick reads · Fresh ideas</p>
 </header>
 
-<!-- AD 1 -->
-<div class="ad-box">advertisement
+<!-- ✅ AD 1 — appears once -->
+<div class="ad-box">
+  <span class="ad-label">Advertisement</span>
   <script src="https://pl26523013.profitablecpmratenetwork.com/ea/70/9f/ea709f9efbc1d5f5baa24cef2d8c5493.js"></script>
 </div>
 
-<!-- AD 3 — 728×90 leaderboard -->
-<div class="ad-box">advertisement
-  <script>atOptions={'key':'0926866c6d9236526a7efeaed4f0b869','format':'iframe','height':90,'width':728,'params':{}};</script>
-  <script src="https://www.highperformanceformat.com/0926866c6d9236526a7efeaed4f0b869/invoke.js"></script>
-</div>
-
-<!-- BLOG POSTS -->
 <div class="posts">
 
   <div class="post">
@@ -46,8 +41,9 @@ footer{background:#1a1208;color:#666;text-align:center;padding:12px;font-size:10
     <p>New benchmarks show AI tools completing real-world tasks in minutes, reshaping how software is built.</p>
   </div>
 
-  <!-- AD 2 — invoke.js -->
-  <div class="ad-box">advertisement
+  <!-- ✅ AD 2 — appears once -->
+  <div class="ad-box">
+    <span class="ad-label">Advertisement</span>
     <script async data-cfasync="false" src="https://pl26523521.profitablecpmratenetwork.com/8813adb958c701c26cc4607eef77cb33/invoke.js"></script>
     <div id="container-8813adb958c701c26cc4607eef77cb33"></div>
   </div>
@@ -58,9 +54,19 @@ footer{background:#1a1208;color:#666;text-align:center;padding:12px;font-size:10
     <p>Research confirms early sunlight exposure boosts mood, alertness, and sleep quality by night.</p>
   </div>
 
-  <!-- AD 5 -->
-  <div class="ad-box">advertisement
-    <script src="https://pl26523633.profitablecpmratenetwork.com/57/69/a4/5769a4c6fb5d2bb18755a81a3eb28789.js"></script>
+  <!-- ✅ AD 3 — 728×90 — appears once -->
+  <div class="ad-box">
+    <span class="ad-label">Advertisement</span>
+    <script>
+      atOptions = {
+        'key' : '0926866c6d9236526a7efeaed4f0b869',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/0926866c6d9236526a7efeaed4f0b869/invoke.js"></script>
   </div>
 
   <div class="post">
@@ -69,10 +75,21 @@ footer{background:#1a1208;color:#666;text-align:center;padding:12px;font-size:10
     <p>A historic milestone as solar panels now generate more electricity than coal plants worldwide.</p>
   </div>
 
+  <!-- ✅ AD 5 — appears once -->
+  <div class="ad-box">
+    <span class="ad-label">Advertisement</span>
+    <script src="https://pl26523633.profitablecpmratenetwork.com/57/69/a4/5769a4c6fb5d2bb18755a81a3eb28789.js"></script>
+  </div>
+
 </div>
 
-<!-- AD 4 — popunder -->
-<script>window.__pu=new Image();window.__pu.src='https://www.profitablecpmratenetwork.com/ngxsjdein?key=ba9f7a9765c2e0c29bdafcf8bd671e6f';</script>
+<!-- ✅ AD 4 — popunder, fires once silently on page load -->
+<script>
+  (function(){
+    var i = new Image();
+    i.src = 'https://www.profitablecpmratenetwork.com/ngxsjdein?key=ba9f7a9765c2e0c29bdafcf8bd671e6f';
+  })();
+</script>
 
 <footer>&copy; 2025 Daily Spark &nbsp;·&nbsp; All rights reserved</footer>
 
